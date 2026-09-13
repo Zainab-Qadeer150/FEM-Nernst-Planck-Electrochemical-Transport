@@ -1,6 +1,6 @@
 # FEM Nernst–Planck Electrochemical Transport
 
-This project extends the verified two-dimensional FEM diffusion solver developed in a separate foundational repository.[1] The present repository focuses on coupled ion transport, electrode boundary fluxes, electric-field-driven migration, pH evolution, and parameter-sensitivity analysis.
+This project extends the verified two-dimensional FEM diffusion solver developed in a separate foundational repository.The present repository focuses on coupled ion transport, electrode boundary fluxes, electric-field-driven migration, pH evolution, and parameter-sensitivity analysis.
 
 ## Overview
 
@@ -368,7 +368,3 @@ BS Mathematics, University of Engineering and Technology Lahore
 Research interests: finite element methods, numerical partial differential equations, mathematical modelling, scientific computing, and electrochemical transport.
 
 ---
-
-## License
-
-This project is released under the MIT License.
