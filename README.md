@@ -1,6 +1,6 @@
 # FEM Nernst–Planck Electrochemical Transport
 
-This project extends the verified two-dimensional FEM diffusion solver developed in a separate foundational repository. The present repository focuses on coupled ion transport, electrode boundary fluxes, electric-field-driven migration, pH evolution, and parameter-sensitivity analysis.
+This project extends the verified two-dimensional FEM diffusion solver developed in a separate foundational repository.[1] The present repository focuses on coupled ion transport, electrode boundary fluxes, electric-field-driven migration, pH evolution, and parameter-sensitivity analysis.
 
 ## Overview
 
@@ -31,7 +31,7 @@ The main objectives of this project are to:
 5. Incorporate ionic migration through the Nernst–Planck equation;
 6. Verify concentration positivity and ion mass balance;
 7. Investigate the effects of applied voltage, electrode flux, and reaction rate;
-8. Establish a numerical framework for more realistic electrochemical simulations.
+8. Establish a numerical framework for more realistic electrochemical simulations[6].
 
 ---
 
@@ -273,7 +273,7 @@ These results confirm that the electric-potential, migration, electrode-source, 
 The parameter study provides the following numerical observations:
 
 * Increasing the applied voltage strengthens ionic migration and changes the interaction between the hydrogen and hydroxide fronts;
-* Increasing the electrode flux increases the amount of ions introduced into the domain and produces more extreme acidic and basic conditions
+* Increasing the electrode flux increases the amount of ions introduced into the domain and produces more extreme acidic and basic conditions[4,5]
 * Increasing the reaction-rate constant increases neutralization where both ionic species overlap;
 * The spatial pH maps reveal changes that cannot be identified from integrated concentrations alone;
 * Mass-balance and positivity checks confirm that the numerical solution remains reliable throughout the parameter studies.
