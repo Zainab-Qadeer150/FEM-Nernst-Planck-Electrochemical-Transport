@@ -41,17 +41,17 @@ The main objectives of this project are to:
 
 The electric potential, $\phi$, is governed by
 
-$$
-\nabla\cdot\left(\sigma\nabla\phi\right)=0,
-$$
+```math
+\nabla\cdot\left(\sigma\nabla\phi\right)=0.
+```
 
 where $\sigma$ is the electrical conductivity.
 
 The electric field is calculated from
 
-$$
+```math
 \mathbf{E}=-\nabla\phi.
-$$
+```
 
 A potential difference is applied between the two electrodes. The resulting electric field drives positively and negatively charged ions in opposite directions.
 
@@ -59,13 +59,13 @@ A potential difference is applied between the two electrodes. The resulting elec
 
 The flux of ionic species $i$ is described by the Nernst–Planck equation [1,2]:
 
-$$
+```math
 \mathbf{J}_i
 =
 -D_i\nabla c_i
 -
-z_iD_i\frac{F}{RT}c_i\nabla\phi,
-$$
+z_iD_i\frac{F}{RT}c_i\nabla\phi.
+```
 
 where:
 
@@ -81,11 +81,11 @@ The first term represents diffusion, while the second term represents electric-f
 
 For hydrogen and hydroxide ions,
 
-$$
+```math
 z_{\mathrm{H}^{+}}=+1,
 \qquad
 z_{\mathrm{OH}^{-}}=-1.
-$$
+```
 
 Therefore, the two ions migrate in opposite directions under the same electric field.
 
@@ -93,29 +93,29 @@ Therefore, the two ions migrate in opposite directions under the same electric f
 
 The concentration of each species satisfies
 
-$$
+```math
 \frac{\partial c_i}{\partial t}
 =
 -\nabla\cdot\mathbf{J}_i
 -
-R(c_{\mathrm{H}^{+}},c_{\mathrm{OH}^{-}}).
-$$
+R\left(c_{\mathrm{H}^{+}},c_{\mathrm{OH}^{-}}\right).
+```
 
 The neutralization reaction is modelled as
 
-$$
-R(c_{\mathrm{H}^{+}},c_{\mathrm{OH}^{-}})
+```math
+R\left(c_{\mathrm{H}^{+}},c_{\mathrm{OH}^{-}}\right)
 =
-k\,c_{\mathrm{H}^{+}}c_{\mathrm{OH}^{-}},
-$$
+k\,c_{\mathrm{H}^{+}}c_{\mathrm{OH}^{-}}.
+```
 
-representing
+This reaction represents
 
-$$
+```math
 \mathrm{H}^{+}+\mathrm{OH}^{-}
 \longrightarrow
 \mathrm{H_2O}.
-$$
+```
 
 Because the same reaction term is removed from both species, hydrogen and hydroxide ions are consumed in equal amounts.
 
@@ -123,27 +123,27 @@ Because the same reaction term is removed from both species, hydrogen and hydrox
 
 The pH is calculated from the hydrogen-ion concentration:
 
-$$
+```math
 \mathrm{pH}
 =
 -\log_{10}\left(c_{\mathrm{H}^{+}}\right).
-$$
+```
 
 To avoid taking the logarithm of zero, a safe numerical concentration is used:
 
-$$
+```math
 c_{\mathrm{safe}}
 =
 \max\left(c_{\mathrm{H}^{+}},10^{-14}\right).
-$$
+```
 
 Therefore,
 
-$$
+```math
 \mathrm{pH}
 =
 -\log_{10}\left(c_{\mathrm{safe}}\right).
-$$
+```
 
 ---
 
